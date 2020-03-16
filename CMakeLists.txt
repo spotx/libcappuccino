@@ -28,17 +28,17 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     ${CAPPUCCINO_SYSTEM_LIBRARY_DEPENDENCIES}
 )
 
-if(UNIX)
-    target_compile_options(${PROJECT_NAME} PRIVATE
-        -Wall
-        -Wextra
-        -Weffc++
-        -Werror
-        -Wpedantic
-        -pedantic-errors
-        -MD
-    )
-endif()
+# if(UNIX)
+#     target_compile_options(${PROJECT_NAME} PRIVATE
+#         -Wall
+#         -Wextra
+#         -Weffc++
+#         -Werror
+#         -Wpedantic
+#         -pedantic-errors
+#         -MD
+#     )
+# endif()
 
 if(${COMPILE_TESTS})
     include(examples/CMakeLists.txt)
