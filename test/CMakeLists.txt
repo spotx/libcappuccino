@@ -12,6 +12,7 @@ set(SOURCE_FILES_LIB_CAPPUCCINO_TEST
 
 enable_testing()
 add_executable(${PROJECT_NAME} ${SOURCE_FILES_LIB_CAPPUCCINO_TEST})
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 add_test(LibCappuccinoTest ${EXECUTABLE_OUTPUT_PATH}${PROJECT_NAME})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../inc)
