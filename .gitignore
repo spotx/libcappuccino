@@ -33,4 +33,5 @@
 
 .idea/
 /Debug/
+/RelWithDebInfo/
 /Release/
